@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Choose the perfect subscription plan for unlimited access to premium content, expert insights, and exclusive benefits.">
+  <title>Pricing Plans - Insight Magazine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">Insight Magazine</a>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html" class="active">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Pricing Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Choose Your Plan</h1>
+      <p>Get unlimited access to premium content, expert insights, and exclusive benefits. Start free for 14 days—no credit card required.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="pricing-grid">
+        <!-- Basic Digital Plan -->
+        <div class="pricing-card">
+          <h3>Basic Digital</h3>
+          <div class="price">$9<span>/month</span></div>
+          <p class="description">Perfect for casual readers who want essential access to quality content</p>
+          <ul class="pricing-features">
+            <li>Unlimited access to all articles across 10+ topics</li>
+            <li>Weekly newsletter with curated expert insights</li>
+            <li>Mobile & desktop optimized reading experience</li>
+            <li>Bookmark articles and create reading lists</li>
+            <li>Standard email support within 48 hours</li>
+          </ul>
+          <button onclick="openModal('subscription-modal')" class="btn btn-outline" style="width: 100%;">Get Started</button>
+        </div>
+
+        <!-- Premium Ad-Free Plan (Featured) -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most Popular</div>
+          <h3>Premium Ad-Free</h3>
+          <div class="price">$19<span>/month</span></div>
+          <p class="description">The best value for dedicated readers seeking uninterrupted premium access</p>
+          <ul class="pricing-features">
+            <li>Everything in Basic Digital, plus:</li>
+            <li>Completely ad-free reading experience</li>
+            <li>Exclusive premium articles & expert interviews</li>
+            <li>Full archive access (3+ years of content)</li>
+            <li>Download articles for offline reading (PDF)</li>
+            <li>Priority customer support within 24 hours</li>
+          </ul>
+          <button onclick="openModal('subscription-modal')" class="btn btn-primary" style="width: 100%;">Start Free Trial</button>
+        </div>
+
+        <!-- Global All-Access Plan -->
+        <div class="pricing-card">
+          <h3>Global All-Access</h3>
+          <div class="price">$39<span>/month</span></div>
+          <p class="description">Ultimate access for professionals and teams needing comprehensive insights</p>
+          <ul class="pricing-features">
+            <li>Everything in Premium Ad-Free, plus:</li>
+            <li>Live expert webinars & exclusive virtual events</li>
+            <li>Monthly Q&A sessions with industry leaders</li>
+            <li>Advanced research tools & analytics dashboard</li>
+            <li>Team accounts (up to 5 seats included)</li>
+            <li>White-label content licensing for businesses</li>
+            <li>Dedicated account manager & VIP support</li>
+          </ul>
+          <button onclick="openModal('subscription-modal')" class="btn btn-secondary" style="width: 100%;">Contact Sales</button>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div style="text-align: center; margin-top: 5rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+        <h2 style="margin-bottom: 2rem; color: var(--primary-navy);">Frequently Asked Questions</h2>
+        <div style="text-align: left; background: var(--bg-white); padding: 2.5rem; border-radius: 1rem; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border: 2px solid var(--border-color);">
+          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color);">
+            <h4 style="color: var(--secondary-emerald); margin-bottom: 0.75rem; font-size: 1.125rem;">Can I switch plans anytime?</h4>
+            <p style="color: var(--text-light); margin: 0; line-height: 1.7;">Yes! You can upgrade, downgrade, or cancel your subscription at any time. Upgrades take effect immediately, while downgrades apply at the end of your current billing cycle.</p>
+          </div>
+          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color);">
+            <h4 style="color: var(--secondary-emerald); margin-bottom: 0.75rem; font-size: 1.125rem;">Do you offer a free trial?</h4>
+            <p style="color: var(--text-light); margin: 0; line-height: 1.7;">We offer a 14-day free trial on our Premium Ad-Free plan. No credit card required to start. You'll only be charged if you decide to continue after the trial period.</p>
+          </div>
+          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color);">
+            <h4 style="color: var(--secondary-emerald); margin-bottom: 0.75rem; font-size: 1.125rem;">What payment methods do you accept?</h4>
+            <p style="color: var(--text-light); margin: 0; line-height: 1.7;">We accept all major credit cards (Visa, Mastercard, American Express, Discover), PayPal, Apple Pay, and Google Pay. Enterprise plans can be invoiced via ACH transfer.</p>
+          </div>
+          <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border-color);">
+            <h4 style="color: var(--secondary-emerald); margin-bottom: 0.75rem; font-size: 1.125rem;">Is there a discount for annual billing?</h4>
+            <p style="color: var(--text-light); margin: 0; line-height: 1.7;">Yes! Save 20% when you choose annual billing on any plan. That's equivalent to 2 months free. Annual subscribers also get priority access to new features.</p>
+          </div>
+          <div>
+            <h4 style="color: var(--secondary-emerald); margin-bottom: 0.75rem; font-size: 1.125rem;">What is your refund policy?</h4>
+            <p style="color: var(--text-light); margin: 0; line-height: 1.7;">We offer a 30-day money-back guarantee on all plans. If you're not satisfied within the first 30 days, contact us for a full refund—no questions asked.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Indicators -->
+      <div style="text-align: center; margin-top: 5rem; padding: 4rem 2rem; background: linear-gradient(135deg, rgba(4, 120, 87, 0.05), rgba(27, 58, 75, 0.05)); border-radius: 1rem; border: 2px solid var(--border-color);">
+        <h2 style="margin-bottom: 1.5rem; color: var(--primary-navy);">Trusted by 50,000+ Readers</h2>
+        <p style="color: var(--text-light); max-width: 650px; margin: 0 auto 3rem; font-size: 1.125rem; line-height: 1.7;">Join thousands of professionals, entrepreneurs, and lifelong learners who rely on Insight Magazine for expert insights and actionable advice.</p>
+        <div style="display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; margin-top: 2.5rem;">
+          <div>
+            <div style="font-size: 3rem; font-weight: 800; color: var(--secondary-emerald); font-family: 'Playfair Display', serif;">4.9★</div>
+            <div style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">Average Rating</div>
+          </div>
+          <div>
+            <div style="font-size: 3rem; font-weight: 800; color: var(--secondary-emerald); font-family: 'Playfair Display', serif;">50K+</div>
+            <div style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">Active Subscribers</div>
+          </div>
+          <div>
+            <div style="font-size: 3rem; font-weight: 800; color: var(--secondary-emerald); font-family: 'Playfair Display', serif;">95%</div>
+            <div style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.5rem;">Renewal Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <h2>Still Have Questions?</h2>
+      <p>Our team is here to help you find the perfect plan for your needs. Get in touch and we'll respond within 24 hours.</p>
+      <a href="contact.html" class="btn btn-secondary" style="background: white; color: var(--primary-navy); border: 2px solid white;">Contact Us →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Insight Magazine</h4>
+          <p>Your trusted source for expert insights on personal finance, health, technology, real estate, career development, and sustainable living.</p>
+          <p style="margin-top: 1rem;"><strong>Contact:</strong><br>
+          Email: editorial@insightmag.com<br>
+          Phone: (555) 123-4567<br>
+          Address: 123 Magazine St, New York, NY 10001</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Personal Finance</a></li>
+            <li><a href="index.html">Health & Wellness</a></li>
+            <li><a href="index.html">Technology</a></li>
+            <li><a href="index.html">Real Estate</a></li>
+            <li><a href="index.html">Travel</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Insight Magazine. All rights reserved. | Publisher: Insight Media Group LLC</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Subscription Modal -->
+  <div id="subscription-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Start Your Subscription</h3>
+        <button class="modal-close" onclick="closeModal('subscription-modal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="subscription-form" onsubmit="handleSubscription(event)">
+          <div class="form-group">
+            <label for="sub-name">Full Name *</label>
+            <input type="text" id="sub-name" name="name" class="form-control" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="sub-email">Email Address *</label>
+            <input type="email" id="sub-email" name="email" class="form-control" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="sub-plan">Choose Plan *</label>
+            <select id="sub-plan" name="plan" class="form-control" required>
+              <option value="">Select a plan...</option>
+              <option value="basic">Basic Digital - $9/month</option>
+              <option value="premium">Premium Ad-Free - $19/month</option>
+              <option value="global">Global All-Access - $39/month</option>
+            </select>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="sub-consent" name="consent" required>
+            <label for="sub-consent">I agree to the <a href="privacy-policy.html" style="color: var(--secondary-emerald); text-decoration: underline;">Privacy Policy</a> and <a href="terms-of-service.html" style="color: var(--secondary-emerald); text-decoration: underline;">Terms of Service</a> *</label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Continue to Payment</button>
+          <p style="text-align: center; margin-top: 1rem; font-size: 0.875rem; color: var(--text-muted);">Secure checkout powered by Stripe</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Banner -->
+  <div class="cookie-banner">
+    <div class="cookie-banner-content">
+      <p>We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies. Read our <a href="cookie-policy.html" style="color: white; text-decoration: underline;">Cookie Policy</a> for more information.</p>
+      <div class="cookie-banner-buttons">
+        <button class="btn btn-primary cookie-accept">Accept</button>
+        <button class="btn btn-outline cookie-decline" style="background: transparent; color: white; border-color: white;">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
